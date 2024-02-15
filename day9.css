@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* flexbox */
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #dadada;
+}
+
+/* #box1 {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+#box2 {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+#box3 {
+    width: 300px;
+    height: 300px;
+    background-color: chocolate;
+} */
+
+#left {
+    width: 80%;
+    height: 100%;
+    background-color:chocolate;
+}
+
+#left #ltop {
+    width: 100%;
+    height: 70%;
+    background-image: url(https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#left #lbottom {
+    width: 100%;
+    height: 30%;
+    color: white;
+    padding: 40px 80px;
+    background-color: #121212;
+}
+
+#lbcontent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: red; */
+}
+
+#cleft {
+    width: 45%;
+    height: 100%;
+    /* background-color: springgreen; */
+}
+
+#cleft p {
+    width: 70%;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+#cright {
+    width: 45%;
+    height: 100%;
+    /* background-color:teal; */
+}
+
+#row {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+#relement {
+    display: flex;
+}
+
+#rtext {
+    margin-left: 10px;
+}
+
+#rtext h6 {
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+#right {
+    width: 20%;
+    height: 100%;
+    background-color:crimson;
+}
+
+#right #rtop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    padding: 70px;
+}
+
+#icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#icons i {
+    font-size: 20px;
+}
+
+#rtop a {
+    text-decoration: none;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#rtop #selected {
+    margin-left: 20px;
+    position: relative;
+}
+
+#rtop #selected::before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#bottomFlower {
+    width: 100px;
+    height: 120px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#bottomFlower i {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: #00000080;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#right #rbottom {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-image: url(https://images.unsplash.com/photo-1446071103084-c257b5f70672?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHBsYW50fGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+}
+
+#capsule {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 90%;
+    padding: 10px 20px;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#capsule h2 {
+    margin-top: 10px;
+    font-size: 19px;
+    line-height: 1;
+}
+
+#capsule p {
+    font-size: 12px;
+    width: 90%;
+    opacity: 0.5;
+    font-weight: 500;
+}
